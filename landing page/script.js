@@ -4,7 +4,7 @@ const clientTestimonials = [
     company: "Bancolombia",
     role: "Director de Cumplimiento",
     comment:
-      "La agudeza legal y la rapidez de respuesta de Luro Legal han sido determinantes en nuestras operaciones en el exterior. Su equipo demostro un dominio impresionante y adapto las estrategias perfectamente a nuestra industria financiera.",
+      "La agudeza legal y la rapidez de respuesta de Luro Legal han sido determinantes en nuestras operaciones en el exterior. Su equipo demostró un dominio impresionante y adaptó las estrategias perfectamente a nuestra industria financiera.",
     rating: 5,
     avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&q=80",
   },
@@ -13,7 +13,7 @@ const clientTestimonials = [
     company: "Nutresa",
     role: "Gerente Legal",
     comment:
-      "Encontrar un despacho que entienda la complejidad del derecho transnacional con tal elegancia es casi imposible. Su enfoque en proteccion de marcas internacionalmente fue muy practico y aplicable.",
+      "Encontrar un despacho que entienda la complejidad del derecho transnacional con tal elegancia es casi imposible. Su enfoque en protección de marcas internacionalmente fue muy práctico y aplicable.",
     rating: 5,
     avatar: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=200&q=80",
   },
@@ -22,7 +22,7 @@ const clientTestimonials = [
     company: "Bavaria",
     role: "VP de Operaciones",
     comment:
-      "Su vision estrategica no tiene rival. Son mucho mas que abogados; son socios estrategicos de confianza. El enfoque en casos reales hizo que la asesoria fuera muy efectiva para nuestro equipo ejecutivo.",
+      "Su visión estratégica no tiene rival. Son mucho más que abogados; son socios estratégicos de confianza. El enfoque en casos reales hizo que la asesoría fuera muy efectiva para nuestro equipo ejecutivo.",
     rating: 5,
     avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=200&q=80",
   },
@@ -31,16 +31,16 @@ const clientTestimonials = [
     company: "Avianca",
     role: "Directora de Contratos",
     comment:
-      "La asesoria en gestion de riesgos legales fue transformadora. Ahora tenemos procesos mucho mas robustos gracias a su experticia y conocimiento del sector aeronautico.",
+      "La asesoría en gestión de riesgos legales fue transformadora. Ahora tenemos procesos mucho más robustos gracias a su experticia y conocimiento del sector aeronáutico.",
     rating: 5,
     avatar: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=200&q=80",
   },
   {
     name: "Roberto Andres Vargas",
     company: "Ecopetrol",
-    role: "Asesor Juridico Senior",
+    role: "Asesor Jurídico Senior",
     comment:
-      "Muy profesionales y conocedores. Su representacion en litigio internacional nos preparo para manejar disputas complejas con confianza en multiples jurisdicciones.",
+      "Muy profesionales y conocedores. Su representación en litigio internacional nos preparó para manejar disputas complejas con confianza en múltiples jurisdicciones.",
     rating: 5,
     avatar: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=200&q=80",
   },
@@ -53,10 +53,10 @@ const teamMembers = [
     image:
       "https://lh3.googleusercontent.com/aida-public/AB6AXuBZh6AQUxk1iflCjgu200Im6HiyTrmNVz5KtFQG4bp9bzK2aflIbgXqMPBxdcKzHM0n8e-Esn3QGs6DxozDI0ogjJV8qsXmFITKLXr3-Su2DAONHvYI1ErBaEq_D_BIOScGy5yLz5hO132BPvEv_IGPT8TiwATQRHP-N0pAih0sUMjogUGdx-dHmJ11Y-3EcbpiGk7CeNGGktPSEsJqp8pjEXFU9LvEdAim3mgznOQqRqJiRVg_-YsYLqwG7jNkzqhJU8UOOQPRWwu5",
     description:
-      "Con mas de 15 anos de experiencia en derecho corporativo e internacional, Kevin ha liderado mas de 300 casos exitosos en mercados de America Latina, Europa y Estados Unidos. Su vision estrategica y enfoque innovador han posicionado a Luro Legal como referente en la practica juridica de alto nivel.",
+      "Con más de 15 años de experiencia en derecho corporativo e internacional, Kevin ha liderado más de 300 casos exitosos en mercados de América Latina, Europa y Estados Unidos. Su visión estratégica y enfoque innovador han posicionado a Luro Legal como referente en la práctica jurídica de alto nivel.",
     specialties: ["Derecho Corporativo Internacional", "Fusiones y Adquisiciones", "Arbitraje Comercial"],
     education: "J.D. Universidad de los Andes, LL.M. Harvard Law School",
-    experience: "15+ anos de trayectoria",
+    experience: "15+ años de trayectoria",
   },
   {
     name: "Dra. Elena Sofia",
@@ -66,8 +66,8 @@ const teamMembers = [
     description:
       "Elena es reconocida por su capacidad para resolver disputas complejas en tribunales nacionales e internacionales. Ha representado a multinacionales en casos de alto perfil, obteniendo resultados excepcionales que protegen los intereses de nuestros clientes.",
     specialties: ["Litigio Civil y Comercial", "Arbitraje Internacional", "Derecho Procesal"],
-    education: "Abogada Universidad Externado, Maestria en Litigio Internacional - NYU",
-    experience: "12 anos de experiencia",
+    education: "Abogada Universidad Externado, Maestría en Litigio Internacional - NYU",
+    experience: "12 años de experiencia",
   },
   {
     name: "Dr. Ricardo Mendez",
@@ -75,10 +75,10 @@ const teamMembers = [
     image:
       "https://lh3.googleusercontent.com/aida-public/AB6AXuBRWLlNrkylZLfpHKMs_J2Om0H1P_JS0VGSeQOoxDQ2Jh65QeTMjjHnzXefnR11Fq3eFp-oDODjW77kcSEV7D-YeEKveB0vSJbyRNnKaTmFyPOJzKzUEyhUiSRoKRwW2XnBiApyHNH9t6W94EWGwR2sFli0zrsUnvZflRQav7WjAsa-nxLhXJunZ-RbhKthI8YYZ_QSncsEQt81E8AMdA3h1uRmQ_wi2VTnJtj-d2vzjciXe6URGb3tLm6cyx9dvjAK3n_MnwjKKS3B",
     description:
-      "Ricardo aporta una perspectiva global unica, habiendo trabajado en firmas de renombre en Londres, Nueva York y Singapur. Su experiencia en transacciones transfronterizas y regulaciones internacionales es invaluable para clientes con operaciones globales.",
-    specialties: ["Comercio Internacional", "Regulacion Financiera", "Inversiones Extranjeras"],
+      "Ricardo aporta una perspectiva global única, habiendo trabajado en firmas de renombre en Londres, Nueva York y Singapur. Su experiencia en transacciones transfronterizas y regulaciones internacionales es invaluable para clientes con operaciones globales.",
+    specialties: ["Comercio Internacional", "Regulación Financiera", "Inversiones Extranjeras"],
     education: "LL.B. Universidad Javeriana, LL.M. London School of Economics",
-    experience: "14 anos de experiencia",
+    experience: "14 años de experiencia",
   },
   {
     name: "Dra. Camila Vargas",
@@ -86,10 +86,10 @@ const teamMembers = [
     image:
       "https://lh3.googleusercontent.com/aida-public/AB6AXuBjofmtywbaj0uQYZhAnCK153nMcBXCM4yeFrgr9XcuYCRUPj6eQR9wddQHKCmQOFpaj5kqdh61zoQ_f1AScfUXCjCayv6it3H73cLckR-T_rOyn8ldQmNrLNiOfuGWJEvvS628tYjMA7Bzb_qUFyfVDSzflgFnBprSzKvvbsBJR7A33ak35aSBi26-3wXAcMOQBUytpJsdyQzg_UUTa5UKSgP0QKIDWcIw9oXEo6877ZQyblK-yrnoBMbdeoClKq92mi8qQGntk1Kg",
     description:
-      "Camila es experta en estructuracion corporativa y gobierno empresarial. Ha asesorado a mas de 50 empresas en procesos de constitucion, reestructuracion y expansion, garantizando el cumplimiento normativo y la optimizacion de estructuras societarias.",
-    specialties: ["Gobierno Corporativo", "Constitucion de Sociedades", "Due Diligence"],
+      "Camila es experta en estructuración corporativa y gobierno empresarial. Ha asesorado a más de 50 empresas en procesos de constitución, reestructuración y expansión, garantizando el cumplimiento normativo y la optimización de estructuras societarias.",
+    specialties: ["Gobierno Corporativo", "Constitución de Sociedades", "Due Diligence"],
     education: "Abogada Universidad del Rosario, MBA INCAE Business School",
-    experience: "10 anos de experiencia",
+    experience: "10 años de experiencia",
   },
   {
     name: "Andres Felipe",
@@ -97,10 +97,10 @@ const teamMembers = [
     image:
       "https://lh3.googleusercontent.com/aida-public/AB6AXuCEl4pCxAF9nRrUpezaGvysL5y7S7XBZ05g0U0V-9X4Vn3RIvz7J4_VGKcznj9xbgLPOwpg1XZ4ikXkmFARiA9S7qGXDtezej9En_6iBvfj0HdeQ0I4ALLQmQsuJROyRTL0m4E9UXZluERu0wknEvnXuyYlEs0FTkB_dcxRtWLXuP6yAg2mFvLt5iblxcjopJfiUxCbb_bHq0x0iLv0P4DA62rZz7EzXVOeabpdBxu0IMZw4_gJs2wcwI5zxzMC9Etz97e5P6OxErI_",
     description:
-      "Andres combina su formacion juridica con habilidades analiticas excepcionales. Es responsable de la investigacion legal y el analisis de precedentes que respaldan las estrategias de nuestro equipo senior, contribuyendo al exito de casos complejos.",
-    specialties: ["Investigacion Juridica", "Analisis de Precedentes", "Documentacion Legal"],
-    education: "Abogado Universidad Nacional, Especializacion en Derecho Comercial",
-    experience: "5 anos de experiencia",
+      "Andres combina su formación jurídica con habilidades analíticas excepcionales. Es responsable de la investigación legal y el análisis de precedentes que respaldan las estrategias de nuestro equipo senior, contribuyendo al éxito de casos complejos.",
+    specialties: ["Investigación Jurídica", "Análisis de Precedentes", "Documentación Legal"],
+    education: "Abogado Universidad Nacional, Especialización en Derecho Comercial",
+    experience: "5 años de experiencia",
   },
   {
     name: "Dra. Isabela Ruiz",
@@ -108,10 +108,10 @@ const teamMembers = [
     image:
       "https://lh3.googleusercontent.com/aida-public/AB6AXuAWfAxFRt8o2jIHT18uGM1j4s4pS4IM_sQDXrVA5PS9zDtaJO4ArKhjK_3S3zzzQ9-5y6-z2zOxfD35M-2diq07wACHuU9ZLlj7sVXlYUWbABGVP2P7F_dC-3LVtophpwnQ6Ls8IE34Rw-x30FSl_OLZDkAMz84fGeWr3wpg0Hue11DEbrK4pZ1rcU67tfkNN4zcVCrmHZ4tCTNfudzPeTcmDAxIWvaHjLqzZfyFroWHW8uPR1-JSMHKXJbZF4xzJ7CWEsqvn_sDfwm",
     description:
-      "Isabela es lider en proteccion de activos intangibles y estrategias de patentes. Ha gestionado portfolios de propiedad intelectual para empresas tecnologicas y creativas, asegurando la proteccion de innovaciones en mercados globales.",
-    specialties: ["Patentes y Marcas", "Derechos de Autor", "Licenciamiento Tecnologico"],
-    education: "Abogada Universidad de Medellin, LL.M. en PI - UC Berkeley",
-    experience: "8 anos de experiencia",
+      "Isabela es líder en protección de activos intangibles y estrategias de patentes. Ha gestionado portfolios de propiedad intelectual para empresas tecnológicas y creativas, asegurando la protección de innovaciones en mercados globales.",
+    specialties: ["Patentes y Marcas", "Derechos de Autor", "Licenciamiento Tecnológico"],
+    education: "Abogada Universidad de Medellín, LL.M. en PI - UC Berkeley",
+    experience: "8 años de experiencia",
   },
 ]
 
