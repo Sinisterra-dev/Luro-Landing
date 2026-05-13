@@ -135,18 +135,36 @@ function renderStars(rating) {
 
 function renderFeaturedTestimonial(index) {
   const item = clientTestimonials[index]
-  featured.innerHTML = `
-    <img src="${item.avatar}" alt="${item.name}" />
-    <div>
-      <div class="stars">${renderStars(item.rating)}</div>
-      <p class="quote">"${item.comment}"</p>
-      <div class="person">
-        <strong>${item.name}</strong>
-        <span>${item.role}</span>
-        <em>${item.company}</em>
-      </div>
-    </div>
-  `
+  featured.replaceChildren()
+
+  const avatar = document.createElement("img")
+  avatar.src = item.avatar
+  avatar.alt = item.name
+
+  const wrapper = document.createElement("div")
+  const stars = document.createElement("div")
+  stars.className = "stars"
+  stars.textContent = renderStars(item.rating)
+
+  const quote = document.createElement("p")
+  quote.className = "quote"
+  quote.textContent = `"${item.comment}"`
+
+  const person = document.createElement("div")
+  person.className = "person"
+
+  const name = document.createElement("strong")
+  name.textContent = item.name
+
+  const role = document.createElement("span")
+  role.textContent = item.role
+
+  const company = document.createElement("em")
+  company.textContent = item.company
+
+  person.append(name, role, company)
+  wrapper.append(stars, quote, person)
+  featured.append(avatar, wrapper)
 }
 
 function renderTestimonialButtons() {
@@ -155,7 +173,14 @@ function renderTestimonialButtons() {
     const button = document.createElement("button")
     button.type = "button"
     button.className = `testimonial-btn ${index === activeTestimonial ? "active" : ""}`
-    button.innerHTML = `<strong>${item.name}</strong><small>${item.company}</small><div class="stars">${renderStars(item.rating)}</div>`
+    const title = document.createElement("strong")
+    title.textContent = item.name
+    const company = document.createElement("small")
+    company.textContent = item.company
+    const stars = document.createElement("div")
+    stars.className = "stars"
+    stars.textContent = renderStars(item.rating)
+    button.append(title, company, stars)
     button.addEventListener("click", () => {
       activeTestimonial = index
       renderFeaturedTestimonial(activeTestimonial)
@@ -171,7 +196,13 @@ function openTeamModal(member) {
   modalRole.textContent = member.role
   modalName.textContent = member.name
   modalDescription.textContent = member.description
-  modalSpecialties.innerHTML = member.specialties.map((specialty) => `<span>${specialty}</span>`).join("")
+  modalSpecialties.replaceChildren(
+    ...member.specialties.map((specialty) => {
+      const tag = document.createElement("span")
+      tag.textContent = specialty
+      return tag
+    }),
+  )
   modalEducation.textContent = member.education
   modalExperience.textContent = member.experience
   modal.setAttribute("aria-hidden", "false")
@@ -189,7 +220,17 @@ function renderTeamGrid() {
     const card = document.createElement("button")
     card.type = "button"
     card.className = "team-card"
-    card.innerHTML = `<img src="${member.image}" alt="${member.name}" /><h3>${member.name}</h3><p>${member.role}</p>`
+    const image = document.createElement("img")
+    image.src = member.image
+    image.alt = member.name
+
+    const name = document.createElement("h3")
+    name.textContent = member.name
+
+    const role = document.createElement("p")
+    role.textContent = member.role
+
+    card.append(image, name, role)
     card.addEventListener("click", () => openTeamModal(member))
     teamGrid.appendChild(card)
   })
