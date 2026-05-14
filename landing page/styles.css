@@ -6,6 +6,7 @@
   --text: #e2e2e2;
   --fuchsia: #cf0688;
   --fuchsia-soft: #ffafd2;
+  --section-transition-height: clamp(80px, 12vw, 130px);
 }
 
 * { box-sizing: border-box; }
@@ -15,6 +16,24 @@ h1, h2, h3, h4 { margin: 0; font-family: "Newsreader", Georgia, serif; font-weig
 a { color: inherit; text-decoration: none; }
 
 .section { position: relative; padding: 7rem 0; overflow: hidden; }
+.section::before,
+.section::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: var(--section-transition-height);
+  pointer-events: none;
+  z-index: 0;
+}
+.section::before {
+  top: 0;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), transparent);
+}
+.section::after {
+  bottom: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+}
 .container { width: min(1120px, 92%); margin: 0 auto; position: relative; z-index: 1; }
 .section-bg { position: absolute; inset: 0; background-size: cover; background-position: center; opacity: 0.2; }
 .hero .section-bg { background-position: center top; }
