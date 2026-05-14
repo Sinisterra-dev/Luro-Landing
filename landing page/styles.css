@@ -6,7 +6,7 @@
   --text: #e2e2e2;
   --fuchsia: #cf0688;
   --fuchsia-soft: #ffafd2;
-  --section-transition-height: 130px;
+  --section-transition-height: clamp(80px, 12vw, 130px);
 }
 
 * { box-sizing: border-box; }
@@ -15,7 +15,7 @@ body { margin: 0; font-family: Inter, system-ui, sans-serif; background: var(--b
 h1, h2, h3, h4 { margin: 0; font-family: "Newsreader", Georgia, serif; font-weight: 400; }
 a { color: inherit; text-decoration: none; }
 
-.section { position: relative; padding: 7rem 0; overflow: hidden; isolation: isolate; }
+.section { position: relative; padding: 7rem 0; overflow: hidden; }
 .section::before,
 .section::after {
   content: "";
