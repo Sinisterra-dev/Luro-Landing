@@ -50,8 +50,8 @@ const teamMembers = [
   {
     name: "Kevin Urrutia",
     role: "Socio Fundador & Abogado",
-    image:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuBZh6AQUxk1iflCjgu200Im6HiyTrmNVz5KtFQG4bp9bzK2aflIbgXqMPBxdcKzHM0n8e-Esn3QGs6DxozDI0ogjJV8qsXmFITKLXr3-Su2DAONHvYI1ErBaEq_D_BIOScGy5yLz5hO132BPvEv_IGPT8TiwATQRHP-N0pAih0sUMjogUGdx-dHmJ11Y-3EcbpiGk7CeNGGktPSEsJqp8pjEXFU9LvEdAim3mgznOQqRqJiRVg_-YsYLqwG7jNkzqhJU8UOOQPRWwu5",
+    image: "imagenes/KEVIN URRUTIAEN ESCALERAS DE PIE.png",
+    imagePosition: "center top",
     description:
       "Con más de 15 años de experiencia en derecho corporativo e internacional, Kevin ha liderado más de 300 casos exitosos en mercados de América Latina, Europa y Estados Unidos. Su visión estratégica y enfoque innovador han posicionado a Luro Legal como referente en la práctica jurídica de alto nivel.",
     specialties: ["Derecho Corporativo Internacional", "Fusiones y Adquisiciones", "Arbitraje Comercial"],
@@ -92,15 +92,15 @@ const teamMembers = [
     experience: "10 años de experiencia",
   },
   {
-    name: "Andres Felipe",
-    role: "Analista Legal",
-    image:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuCEl4pCxAF9nRrUpezaGvysL5y7S7XBZ05g0U0V-9X4Vn3RIvz7J4_VGKcznj9xbgLPOwpg1XZ4ikXkmFARiA9S7qGXDtezej9En_6iBvfj0HdeQ0I4ALLQmQsuJROyRTL0m4E9UXZluERu0wknEvnXuyYlEs0FTkB_dcxRtWLXuP6yAg2mFvLt5iblxcjopJfiUxCbb_bHq0x0iLv0P4DA62rZz7EzXVOeabpdBxu0IMZw4_gJs2wcwI5zxzMC9Etz97e5P6OxErI_",
+    name: "Alexander Sinisterra",
+    role: "Desarrollador de Software",
+    image: "imagenes/Alexander Sinisterra.png",
+    imagePosition: "center top",
     description:
-      "Andres combina su formación jurídica con habilidades analíticas excepcionales. Es responsable de la investigación legal y el análisis de precedentes que respaldan las estrategias de nuestro equipo senior, contribuyendo al éxito de casos complejos.",
-    specialties: ["Investigación Jurídica", "Análisis de Precedentes", "Documentación Legal"],
-    education: "Abogado Universidad Nacional, Especialización en Derecho Comercial",
-    experience: "5 años de experiencia",
+      "Alexander fortalece la operación digital de Luro Legal con una combinación de soporte técnico TI y desarrollo de software. Participa en la mejora de herramientas internas, automatización de procesos y soporte a la infraestructura tecnológica que respalda al equipo.",
+    specialties: ["Desarrollo Web", "Automatización de Procesos", "Soporte Técnico TI"],
+    education: "Formación en desarrollo de software y soporte de infraestructura tecnológica",
+    experience: "Experiencia en desarrollo y soporte tecnológico",
   },
   {
     name: "Dra. Isabela Ruiz",
@@ -193,6 +193,7 @@ function renderTestimonialButtons() {
 function openTeamModal(member) {
   modalImage.src = member.image
   modalImage.alt = member.name
+  modalImage.style.objectPosition = member.imagePosition || "center"
   modalRole.textContent = member.role
   modalName.textContent = member.name
   modalDescription.textContent = member.description
@@ -223,6 +224,7 @@ function renderTeamGrid() {
     const image = document.createElement("img")
     image.src = member.image
     image.alt = member.name
+    image.style.objectPosition = member.imagePosition || "center"
 
     const name = document.createElement("h3")
     name.textContent = member.name
