@@ -35,9 +35,9 @@ a { color: inherit; text-decoration: none; }
   background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
 }
 .container { width: min(1120px, 92%); margin: 0 auto; position: relative; z-index: 1; }
-.section-bg { position: absolute; inset: 0; background-size: cover; background-position: center; opacity: 0.2; }
+.section-bg { position: absolute; inset: 0; background-size: cover; background-position: center; opacity: 0.34; }
 .hero .section-bg { background-position: center top; }
-.section-bg.subtle { opacity: 0.06; }
+.section-bg.subtle { opacity: 0.2; }
 
 .navbar {
   position: fixed; top: 0; left: 0; right: 0; height: 80px; z-index: 50;
